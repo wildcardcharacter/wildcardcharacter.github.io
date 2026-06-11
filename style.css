@@ -115,8 +115,23 @@ h1 {
   line-height: 1.7;
 }
 
-.projects {
-  margin-top: 18px;
+.projects li {
+  margin: 12px 0;
+}
+
+.projects a {
+  display: inline-block;
+  color: var(--text);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.projects a:hover {
+  color: var(--accent);
+  background: rgba(255,255,255,0.05);
+  transform: translateX(4px);
 }
 
 .projects ul {
