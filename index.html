@@ -1,163 +1,431 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>wildcardcharacter | Linux & Shell</title>
+  <title>wildcardcharacter | Linux & Open Source</title>
 
   <meta
     name="description"
-    content="Persönliche Website von wildcardcharacter: Linux, Debian, XFCE, Bash-Skripte und kleine Open-Source-Tools."
-  />
+    content="wildcardcharacter – Linux, Haskell, Bash, XFCE und kleine Open-Source-Tools."
+  >
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <div class="scanlines"></div>
+
   <main class="page">
 
-    <section class="hero">
-      <div class="badge">Debian 13 • XFCE • Bash</div>
+    <!-- HEADER -->
+    <header class="site-header">
 
-      <h1>Hi, ich bin Markus.</h1>
+      <div class="terminal">
+        <div class="prompt">
+          markus@linux:~$
+          <span class="cursor">█</span>
+        </div>
 
-      <p class="subtitle">
-        Linux-Enthusiast, XFCE-Tüftler und Shell-Scripter.
-        Ich baue kleine, praktische Tools für meinen Desktop-Workflow.
-      </p>
+        <h1>wildcardcharacter</h1>
 
-      <div class="actions">
-        <a
-          href="https://github.com/wildcardcharacter"
-          class="button primary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub ansehen
-        </a>
-
-        <a
-          href="mailto:wildcardcharacter@icloud.com"
-          class="button"
-        >
-          Kontakt
-        </a>
+        <p class="tagline">
+          Linux · Open Source · Haskell · Automation
+        </p>
       </div>
+
+    </header>
+
+
+    <!-- ABOUT -->
+    <section class="section">
+
+      <div class="command">
+        $ cat about.txt
+      </div>
+
+      <div class="terminal-list">
+
+        <p>
+          Hi, ich bin Markus.
+        </p>
+
+        <p>
+          Ich beschäftige mich mit Linux, Open Source,
+          Programmierung und kleinen Tools, die im Alltag
+          tatsächlich etwas bringen.
+        </p>
+
+        <p>
+          Mein Schwerpunkt liegt auf schlanken Linux-Anwendungen,
+          XFCE-Utilities, Bash-Skripten und Haskell.
+        </p>
+
+      </div>
+
     </section>
 
-    <section class="cards">
-      <article class="card">
-        <h2>🐧 Linux</h2>
-        <p>
-          Mein Daily Driver ist Debian 13 mit XFCE.
-          Ich mag schlanke Systeme, klare Workflows und einfache Lösungen.
-        </p>
-      </article>
 
-      <article class="card">
-        <h2>🐚 Shell</h2>
-        <p>
-          Ich automatisiere Aufgaben mit Bash und erstelle kleine Skripte,
-          die direkt im Alltag nützlich sind.
-        </p>
-      </article>
+    <!-- INTERESTS -->
+    <section class="section">
 
-      <article class="card">
-        <h2>🧩 XFCE Widgets</h2>
+      <div class="command">
+        $ cat interests.txt
+      </div>
+
+      <div class="terminal-list">
+
         <p>
-          Ich entwickle Genmon-Widgets für Updates, Systemstatus
-          und VPN-Steuerung direkt im Panel.
+          <span class="bullet">▸</span>
+          Linux & Debian
         </p>
-      </article>
+
+        <p>
+          <span class="bullet">▸</span>
+          XFCE & Desktop Utilities
+        </p>
+
+        <p>
+          <span class="bullet">▸</span>
+          Bash & Automation
+        </p>
+
+        <p>
+          <span class="bullet">▸</span>
+          Haskell & Functional Programming
+        </p>
+
+        <p>
+          <span class="bullet">▸</span>
+          Open Source Projects
+        </p>
+
+      </div>
+
     </section>
 
-    <section class="projects">
-      <h2>Aktuelle Projekte</h2>
+
+    <!-- PROJECTS -->
+    <section class="section projects">
+
+      <div class="command">
+        $ ls -la ~/projects
+      </div>
 
       <div class="project-grid">
 
-      <a
-        class="project-card"
-        href="https://github.com/wildcardcharacter/Zufallswerk"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <h3>🔐 Zufallswerk</h3>
-        <p>
-          Einfacher und sicherer Passwortgenerator (CSPRNG), geschrieben in Haskell,
-          mit einer schlanken grafischen YAD-Oberfläche.
-        </p>
-        <span>Projekt ansehen →</span>
-      </a>
-   
-      <a
-          class="project-card"
-          href="https://github.com/wildcardcharacter/AudioHarvester"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
 
-          <h3>🎵 AudioHarvester</h3>
+        <!-- Zufallswerk -->
+        <article class="project">
+
+          <div class="project-head">
+
+            <div class="project-name">
+              🔐 Zufallswerk
+            </div>
+
+            <div class="status-line ok">
+              [ active ]
+            </div>
+
+          </div>
+
+          <div class="project-meta">
+            Haskell · GTK · Linux
+          </div>
+
           <p>
-          Unterstützt MP3, Opus und M4A, Coverbild-Einbettung,
-          Playlist-Downloads & Download-Historie.
+            Moderner Passwort- und Passphrasengenerator
+            für Linux.
           </p>
-          <span>Projekt ansehen →</span>
-        </a>
-        
+
+          <p class="small">
+            Passwörter · Wort-Passphrasen · Zeichenblöcke ·
+            Entropie · Deutsch/English
+          </p>
+
+          <a
+            class="button"
+            href="https://github.com/wildcardcharacter/Zufallswerk"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub →
+          </a>
+
+        </article>
+
+
+        <!-- AudioHarvester -->
+        <article class="project">
+
+          <div class="project-head">
+
+            <div class="project-name">
+              🎵 AudioHarvester
+            </div>
+
+            <div class="status-line ok">
+              [ active ]
+            </div>
+
+          </div>
+
+          <div class="project-meta">
+            Python · PyQt6 · yt-dlp
+          </div>
+
+          <p>
+            Grafischer Audio-Downloader für YouTube
+            mit verschiedenen Audioformaten.
+          </p>
+
+          <a
+            class="button"
+            href="https://github.com/wildcardcharacter/AudioHarvester"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub →
+          </a>
+
+        </article>
+
+
+        <!-- XFCE APT -->
+        <article class="project">
+
+          <div class="project-head">
+
+            <div class="project-name">
+              ⚒️ XFCE APT Update Widget
+            </div>
+
+            <div class="status-line ok">
+              [ active ]
+            </div>
+
+          </div>
+
+          <div class="project-meta">
+            Bash · XFCE · Genmon
+          </div>
+
+          <p>
+            Kleines XFCE-Panel-Widget für Updates,
+            Statusanzeige und Systempflege.
+          </p>
+
+          <a
+            class="button"
+            href="https://github.com/wildcardcharacter"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub →
+          </a>
+
+        </article>
+
+
+        <!-- System Monitor -->
+        <article class="project">
+
+          <div class="project-head">
+
+            <div class="project-name">
+              📊 XFCE System Monitor Widget
+            </div>
+
+            <div class="status-line ok">
+              [ active ]
+            </div>
+
+          </div>
+
+          <div class="project-meta">
+            Bash · XFCE · Genmon
+          </div>
+
+          <p>
+            Systeminformationen direkt im XFCE-Panel.
+          </p>
+
+          <a
+            class="button"
+            href="https://github.com/wildcardcharacter"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub →
+          </a>
+
+        </article>
+
+
+        <!-- AdGuard -->
+        <article class="project">
+
+          <div class="project-head">
+
+            <div class="project-name">
+              🛡️ AdGuard VPN Widget
+            </div>
+
+            <div class="status-line ok">
+              [ active ]
+            </div>
+
+          </div>
+
+          <div class="project-meta">
+            Bash · XFCE · AdGuard VPN
+          </div>
+
+          <p>
+            Steuerung und Statusanzeige von AdGuard VPN
+            direkt über das XFCE-Panel.
+          </p>
+
+          <a
+            class="button"
+            href="https://github.com/wildcardcharacter"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURED PROJECT -->
+    <section class="section featured">
+
+      <div class="command">
+        $ ./zufallswerk --version
+      </div>
+
+      <div class="featured-content">
+
+        <div class="ascii-lock">
+<pre>
+      ╔══════╗
+      ║  🔐  ║
+      ║ ZW   ║
+      ╚══════╝
+</pre>
+        </div>
+
+        <div>
+
+          <div class="eyebrow">
+            FEATURED PROJECT
+          </div>
+
+          <h2>Zufallswerk 2.0.0</h2>
+
+          <p>
+            Secure passwords. Memorable passphrases.
+            No unnecessary complexity.
+          </p>
+
+          <p class="small">
+            Passwortgenerator · Wort-Passphrasen ·
+            Zeichenblöcke · Entropie · Deutsch/English · GTK
+          </p>
+
+          <div class="contact-links">
+
+            <a
+              class="button primary"
+              href="https://github.com/wildcardcharacter/Zufallswerk"
+              target="_blank"
+              rel="noopener"
+            >
+              View Project
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MOTTO -->
+    <section class="section">
+
+      <div class="command">
+        $ cat motto.txt
+      </div>
+
+      <blockquote class="quote">
+        Build small things.<br>
+        Make them useful.<br>
+        Keep them simple.
+      </blockquote>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section">
+
+      <div class="command">
+        $ echo $CONTACT
+      </div>
+
+      <div class="contact-links">
+
         <a
-          class="project-card"
-          href="https://github.com/wildcardcharacter/Debian-XFCE-Update-Indicator"
+          class="button primary"
+          href="https://github.com/wildcardcharacter"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
         >
-          <h3>🛡️ XFCE APT Update Widget</h3>
-          <p>
-            Zeigt verfügbare APT-Updates direkt im XFCE-Panel an
-            und startet Systemupdates per Mausklick.
-          </p>
-          <span>Projekt ansehen →</span>
+          GitHub
         </a>
 
         <a
-          class="project-card"
-          href="https://github.com/wildcardcharacter/XFCE-System-Monitor-Widget"
-          target="_blank"
-          rel="noopener noreferrer"
+          class="button"
+          href="mailto:wildcardcharacter@icloud.com"
         >
-          <h3>🌡️ XFCE System Monitor Widget</h3>
-          <p>
-            Zeigt CPU-Auslastung, RAM-Verbrauch und Temperatur
-            kompakt im XFCE-Panel an.
-          </p>
-          <span>Projekt ansehen →</span>
-        </a>
-
-        <a
-          class="project-card"
-          href="https://github.com/wildcardcharacter/AdGuard-VPN-XFCE-Genmon-Widget"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h3>🔒 AdGuard VPN Widget</h3>
-          <p>
-            VPN-Status anzeigen, Standorte wechseln und Verbindungen
-            direkt aus dem XFCE-Panel verwalten.
-          </p>
-          <span>Projekt ansehen →</span>
+          Contact
         </a>
 
       </div>
+
     </section>
 
-    <section class="quote">
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
       <p>
-        „Warum etwas zehnmal von Hand machen,
-        wenn man es einmal automatisieren kann?“
+        <span class="prompt">markus@linux:~$</span>
+        exit
       </p>
-    </section>
+
+      <p class="small">
+        No tracking · No frameworks · Just HTML & CSS
+      </p>
+
+      <p class="small">
+        © 2026 wildcardcharacter
+      </p>
+
+    </footer>
 
   </main>
+
 </body>
 </html>
