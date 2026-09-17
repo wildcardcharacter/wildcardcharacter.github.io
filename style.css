@@ -48,7 +48,32 @@ body::before {
   color: var(--muted);
   font-family: monospace;
   font-size: .9rem;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 35px; /* Abstand zum Hero */
+  margin-top: 18px;
+  font-family: monospace;
+  font-size: .78rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.site-nav a::before {
+  content: "./";
+  color: var(--green-dark);
+}
+
+.site-nav a:hover {
+  color: var(--green);
 }
 
 .prompt { color: var(--green); }
@@ -293,16 +318,114 @@ footer {
   font-size: .78rem;
 }
 
+
 footer p { margin: 8px 0 0; }
 
+.back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  padding: 9px 12px;
+  border: 1px solid var(--green-dark);
+  background: var(--surface);
+  color: var(--green);
+  font-family: monospace;
+  font-size: .75rem;
+  text-decoration: none;
+  opacity: .8;
+  transition: opacity .2s ease, background .2s ease, transform .2s ease;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+  background: #141a16;
+  transform: translateY(-2px);
+}
+
+/* Planned projects */
+.planned-project {
+  border-style: dashed;
+  opacity: 0.9;
+  position: relative;
+}
+
+.planned-project .version {
+  letter-spacing: 0.08em;
+}
+
+.planned-project .project-link {
+  opacity: 0.75;
+}
+
+.planned-section {
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.planned-intro {
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 760px) {
-  .site { width: min(calc(100% - 28px), var(--max)); }
-  .header { padding-top: 22px; }
-  .hero { grid-template-columns: 1fr; gap: 28px; }
-  .terminal-badge { width: fit-content; }
-  .projects { grid-template-columns: 1fr; }
-  .spotlight { padding: 45px 24px; }
-  .spotlight-content { grid-template-columns: 1fr; gap: 25px; }
-  .lock { width: 90px; height: 90px; }
-  .section { padding: 48px 0; }
+  .site {
+    width: min(calc(100% - 28px), var(--max));
+  }
+
+  .header {
+    padding: 22px 0 40px;
+  }
+
+  .topline {
+    margin-bottom: 22px;
+    font-size: .82rem;
+  }
+
+  .site-nav {
+    gap: 9px 14px;
+    margin-top: 14px;
+    font-size: .72rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  h1 {
+    font-size: clamp(2.3rem, 12vw, 3.8rem);
+    letter-spacing: -.07em;
+    overflow-wrap: anywhere;
+  }
+
+  .intro {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .terminal-badge {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 16px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlight {
+    padding: 45px 24px;
+  }
+
+  .spotlight-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .lock {
+    width: 90px;
+    height: 90px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
 }

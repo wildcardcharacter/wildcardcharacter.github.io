@@ -7,31 +7,6 @@
   <title>wildcardcharacter | Linux & Open Source</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* RuleForge – geplantes Projekt */
-    .planned-project {
-      border-style: dashed;
-      opacity: 0.9;
-      position: relative;
-    }
-
-    .planned-project .version {
-      letter-spacing: 0.08em;
-    }
-
-    .planned-project .project-link {
-      opacity: 0.75;
-    }
-
-    .planned-section {
-      border-top: 1px dashed rgba(255, 255, 255, 0.12);
-    }
-
-    .planned-intro {
-      margin-bottom: 2rem;
-    }
-  </style>
 </head>
 
 <body>
@@ -43,10 +18,18 @@
          ========================= -->
     <header class="header">
 
-      <div class="topline">
+      <div class="topline" id="top">
         <span class="prompt">~/wildcardcharacter</span>
         <span class="cursor">█</span>
       </div>
+
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#technologien">Technologien</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#geplant">Geplant</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
 
       <div class="hero">
 
@@ -82,7 +65,7 @@
     <!-- =========================
          ABOUT
          ========================= -->
-    <section class="section">
+    <section class="section" id="ueber-mich">
 
       <div class="section-title">
         <span>01</span>
@@ -121,7 +104,7 @@
     <!-- =========================
          TECHNOLOGIES
          ========================= -->
-    <section class="section">
+    <section class="section" id="technologien">
 
       <div class="section-title">
         <span>02</span>
@@ -155,7 +138,7 @@
     <!-- =========================
          PROJECTS
          ========================= -->
-    <section class="section">
+    <section class="section" id="projekte">
 
       <div class="section-title">
         <span>03</span>
@@ -177,7 +160,6 @@
           </div>
 
           <div>
-
             <p class="eyebrow">
               ZUFALLSWERK 2.0.0
             </p>
@@ -198,7 +180,6 @@
                rel="noopener">
               GitHub öffnen →
             </a>
-
           </div>
 
         </div>
@@ -399,100 +380,103 @@
 
     </section>
 
-<!-- =========================
-     PLANNED PROJECTS
-     ========================= -->
-<section class="section planned-section">
 
-  <div class="section-title">
-    <span>04</span>
-    <h2>Geplante Projekte</h2>
-  </div>
+    <!-- =========================
+         PLANNED PROJECTS
+         ========================= -->
+    <section class="section planned-section" id="geplant">
 
-  <div class="about planned-intro">
-    <p>
-      Ideen und Projekte, die als Nächstes entstehen sollen.
-      Noch in Planung – aber bereits auf Papier.
-    </p>
-  </div>
-
-  <div class="projects">
-
-    <!-- FileDNA -->
-    <div class="project planned-project">
-
-      <div class="project-top">
-        <span class="number">01</span>
-        <span class="version">Geplant</span>
+      <div class="section-title">
+        <span>04</span>
+        <h2>Geplante Projekte</h2>
       </div>
 
-      <div class="project-icon">
-        🧬
+      <div class="about planned-intro">
+        <p>
+          Ideen und Projekte, die als Nächstes entstehen sollen.
+          Noch in Planung – aber bereits auf Papier.
+        </p>
       </div>
 
-      <h3>
-        FileDNA
-      </h3>
+      <div class="projects">
 
-      <p>
-        Rust-basiertes Tool zur Untersuchung, Identifizierung
-        und zum Vergleich von Dateien anhand ihrer digitalen
-        „DNA“.
-      </p>
+        <!-- FileDNA -->
+        <div class="project planned-project">
 
-      <div class="project-tags">
-        <span>Rust</span>
-        <span>CLI</span>
-        <span>Linux</span>
+          <div class="project-top">
+            <span class="number">01</span>
+            <span class="version">Geplant</span>
+          </div>
+
+          <div class="project-icon">
+            🧬
+          </div>
+
+          <h3>
+            FileDNA
+          </h3>
+
+          <p>
+            Rust-basiertes Tool zur Untersuchung, Identifizierung
+            und zum Vergleich von Dateien anhand ihrer digitalen
+            „DNA“.
+          </p>
+
+          <div class="project-tags">
+            <span>Rust</span>
+            <span>CLI</span>
+            <span>Linux</span>
+          </div>
+
+          <span class="project-link">
+            In Planung
+          </span>
+
+        </div>
+
+
+        <!-- RuleForge -->
+        <div class="project planned-project">
+
+          <div class="project-top">
+            <span class="number">02</span>
+            <span class="version">Geplant</span>
+          </div>
+
+          <div class="project-icon">
+            ⚒️
+          </div>
+
+          <h3>
+            RuleForge
+          </h3>
+
+          <p>
+            Kleine, in Haskell entwickelte Regelsprache für
+            Dateien, Systeminformationen und Automatisierung.
+          </p>
+
+          <div class="project-tags">
+            <span>Haskell</span>
+            <span>DSL</span>
+            <span>Linux</span>
+          </div>
+
+          <span class="project-link">
+            In Planung
+          </span>
+
+        </div>
+
       </div>
 
-      <span class="project-link">
-        In Planung
-      </span>
+    </section>
 
-    </div>
-
-      <!-- RuleForge -->
-    <div class="project planned-project">
-
-      <div class="project-top">
-        <span class="number">02</span>
-        <span class="version">Geplant</span>
-      </div>
-
-      <div class="project-icon">
-        ⚒️
-      </div>
-
-      <h3>
-        RuleForge
-      </h3>
-
-      <p>
-        Kleine, in Haskell entwickelte Regelsprache für
-        Dateien, Systeminformationen und Automatisierung.
-      </p>
-
-      <div class="project-tags">
-        <span>Haskell</span>
-        <span>DSL</span>
-        <span>Linux</span>
-      </div>
-
-      <span class="project-link">
-        In Planung
-      </span>
-
-    </div>
-
-  </div>
-
-</section>
 
     <!-- =========================
          CONTACT
          ========================= -->
-    <section class="section">
+    <section class="section" id="kontakt">
 
       <div class="section-title">
         <span>05</span>
@@ -527,7 +511,6 @@
             GitHub →
           </a>
 
-
         </div>
 
       </div>
@@ -549,8 +532,8 @@
       </p>
 
     </footer>
-
-  </div>
-
+<a href="#top" class="back-to-top" aria-label="Zum Seitenanfang">
+  ↑ TOP
+</a>
 </body>
 </html>
