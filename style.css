@@ -309,6 +309,14 @@ h1 span {
   margin-bottom: 20px;
 }
 
+.project-updated {
+  min-height: 0;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: .72rem;
+}
+
 .project-link {
   color: var(--green-dark);
   font-family: "DejaVu Sans Mono", monospace;

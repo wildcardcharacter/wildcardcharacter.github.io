@@ -222,6 +222,8 @@
             <span>Linux</span>
           </div>
 
+          <p class="project-updated" data-repository="Zufallswerk" hidden></p>
+
           <span class="project-link">
             Projekt ansehen →
           </span>
@@ -258,6 +260,8 @@
             <span>PyQt6</span>
             <span>yt-dlp</span>
           </div>
+
+          <p class="project-updated" data-repository="AudioHarvester" hidden></p>
 
           <span class="project-link">
             Projekt ansehen →
@@ -296,6 +300,8 @@
             <span>Linux</span>
           </div>
 
+          <p class="project-updated" data-repository="Debian-XFCE-Update-Indicator" hidden></p>
+
           <span class="project-link">
             Projekt ansehen →
           </span>
@@ -333,6 +339,8 @@
             <span>Linux</span>
           </div>
 
+          <p class="project-updated" data-repository="XFCE-System-Monitor-Widget" hidden></p>
+
           <span class="project-link">
             Projekt ansehen →
           </span>
@@ -369,6 +377,8 @@
             <span>XFCE</span>
             <span>Linux</span>
           </div>
+
+          <p class="project-updated" data-repository="AdGuard-VPN-XFCE-Genmon-Widget" hidden></p>
 
           <span class="project-link">
             Projekt ansehen →
@@ -525,5 +535,24 @@
 <a href="#top" class="back-to-top" aria-label="Zum Seitenanfang">
   ↑ TOP
 </a>
+<script>
+  document.querySelectorAll(".project-updated[data-repository]").forEach(async (label) => {
+    const repository = label.dataset.repository;
+
+    try {
+      const response = await fetch(`https://api.github.com/repos/wildcardcharacter/${repository}`);
+      if (!response.ok) return;
+
+      const data = await response.json();
+      const updatedAt = new Date(data.updated_at);
+      if (Number.isNaN(updatedAt.getTime())) return;
+
+      label.textContent = `Zuletzt aktualisiert: ${new Intl.DateTimeFormat("de-DE").format(updatedAt)}`;
+      label.hidden = false;
+    } catch {
+      // Die Projektkacheln bleiben auch ohne Verbindung zur GitHub-API nutzbar.
+    }
+  });
+</script>
 </body>
 </html>
