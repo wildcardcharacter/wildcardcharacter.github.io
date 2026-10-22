@@ -1,522 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Favicon -->  
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
-  <meta name="description" content="Kleine Programme und Open-Source-Projekte von wildcardcharacter – praktische Anwendungen für Desktop und Alltag.">
-  <title>wildcardcharacter | Kleine Programme & Open Source</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171916">
+  <meta name="description" content="Markus Reichelt – kleine Open-Source-Programme für konkrete Aufgaben. Linux, Haskell, Rust, Python und Bash.">
+  <title>Markus Reichelt — Kleine Programme, klare Lösungen</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
-
 <body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <div class="top-strip"><span>OPEN SOURCE · LINUX · KLEINE TOOLS</span><span class="strip-right">STATUS: AM BAUEN <i aria-hidden="true"></i></span></div>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="Markus Reichelt – Startseite"><img class="brand-logo" src="favicon.png" alt=""><span class="brand-copy"><small>Independent tinkerer &amp; developer</small></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menü <span>＋</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+      <a href="#ueber">Über mich</a><a href="#projekte">Projekte</a><a href="#geplant">Roadmap</a><a href="#kontakt" class="nav-cta">Kontakt <span>↗</span></a>
+    </nav>
+  </header>
 
-  <div class="site">
-
-    <!-- =========================
-         HEADER
-         ========================= -->
-    <header class="header">
-
-      <div class="topline" id="top">
-        <span class="prompt">mk@wildcardcharacter ~/ $</span>
-        <span class="cursor">█</span>
+  <main id="inhalt">
+    <section class="hero shell" id="start">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Persönliche Werkstatt für Software</p>
+        <h1>Kleine Programme.<br><em>Klare Lösungen.</em></h1>
+        <p class="hero-lede">Ich entwickle Open-Source-Tools, die nervige Kleinigkeiten vereinfachen — pragmatisch, leichtgewichtig und mit Liebe zum Detail.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projekte">Projekte entdecken <span>↓</span></a><a class="text-link" href="https://github.com/wildcardcharacter" target="_blank" rel="noreferrer">GitHub-Profil <span>↗</span></a></div>
+        <div class="hero-meta"><span><b>01</b> · DEBIAN / LINUX</span><span><b>02</b> · OPEN SOURCE</span><span><b>03</b> · SELBSTGEMACHT</span></div>
       </div>
-
-      <nav class="site-nav" aria-label="Hauptnavigation">
-        <a href="#ueber-mich">Über mich</a>
-        <a href="#projekte">Projekte</a>
-        <a href="#geplant">Geplant</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-
-      <div class="hero">
-
-        <div>
-
-          <h1>Kleine Programme für konkrete Aufgaben.</h1>
-
-          <p class="intro">
-            Ich entwickle Open-Source-Anwendungen, die den Alltag
-            einfacher und verlässlicher machen.
-          </p>
+      <div class="hero-art" aria-label="Dekorative Retro-Terminal-Illustration">
+        <div class="art-window"><div class="window-bar"><span class="window-lights"><i></i><i></i><i></i></span><span>werkstatt.log</span><span>v.01</span></div>
+          <div class="terminal-body"><p class="terminal-muted">// willkommen in meiner werkstatt</p><p><span class="prompt">mk@wildcard:~$</span> <span class="typed">neofetch</span></p><div class="terminal-info"><pre class="ascii" aria-hidden="true">      .--.      
+     |o_o |     
+     |:_/ |     
+    //   \ \    
+   (|     | )   
+  /'\_   _/`\  
+  \___)=(___/  </pre><div><b>WILDCARDCHARACTER</b><span>OS: Debian GNU/Linux</span><span>Shell: Bash</span><span>Code: Haskell · Rust</span><span>Tools: Python · CLI</span><span class="terminal-ok">● ready to build</span></div></div><p class="terminal-bottom"><span class="prompt">mk@wildcard:~$</span> <span class="cursor">▋</span></p></div>
         </div>
-
-        <div class="terminal-badge">
-          <span>PLATTFORM</span>
-          <strong>Debian 13</strong>
-
-          <span>ANWENDUNGEN</span>
-          <strong>Desktop & Kommandozeile</strong>
-
-          <span>QUELLCODE</span>
-          <strong>Open Source</strong>
-        </div>
-
+        <div class="sticker sticker-top">BUILD<br>SMALL.</div><div class="sticker sticker-bottom">SHIP<br>USEFUL.</div><div class="art-cross cross-one">＋</div><div class="art-cross cross-two">✳</div>
       </div>
-
-    </header>
-
-
-    <!-- =========================
-         ABOUT
-         ========================= -->
-    <section class="section about-section" id="ueber-mich">
-
-      <div class="section-title">
-        <span>01</span>
-        <h2>Über mich</h2>
-      </div>
-
-      <div class="about">
-
-        <p>
-          Ich schreibe kleine Programme und Anwendungen – vom
-          Passwortgenerator bis zu Desktop- und Kommandozeilenprogrammen.
-          Viele meiner Projekte entstehen aus konkreten Ideen und Problemen
-          aus dem Alltag.
-        </p>
-
-        <p>
-          Dabei probiere ich unterschiedliche Sprachen und Technologien aus.
-          Der Quellcode meiner Projekte ist offen auf GitHub verfügbar.
-        </p>
-
-        <div class="tags">
-          <span>Linux</span>
-          <span>Debian</span>
-          <span>XFCE</span>
-          <span>Haskell</span>
-          <span>Rust</span>
-          <span>Python</span>
-          <span>Bash</span>
-          <span>Open Source</span>
-        </div>
-
-      </div>
-
+      <div class="hero-stamp">MADE WITH<br><strong>CURIOSITY</strong><span>✳</span></div>
     </section>
 
-
-    <!-- =========================
-         PROJECTS
-         ========================= -->
-    <section class="section" id="projekte">
-
-      <div class="section-title">
-        <span>02</span>
-        <h2>Projekte</h2>
-      </div>
-
-<!-- FEATURED PROJECT -->
-<div class="spotlight">
-
-  <div class="spotlight-label">
-    PROJEKTIDEE IM FOKUS
-  </div>
-
-  <div class="spotlight-content">
-
-    <div class="lock">
-      🔬
-    </div>
-
-    <div>
-      <p class="eyebrow">
-        FILEDNA
-      </p>
-
-      <h2>
-        Dateien verstehen.<br>
-        Ihre Identität sichtbar machen.
-      </h2>
-
-      <p>
-        Datei-Analyse · Digitale Fingerabdrücke · Hashes ·
-        Duplikaterkennung · Dateivergleich · Rust
-      </p>
-
-      <span class="button">
-        In Planung
-      </span>
-    </div>
-
-  </div>
-
-</div>
-
-      <!-- Projects -->
-      <div class="projects">
-
-
-        <!-- Zufallswerk -->
-        <a class="project featured-project"
-           href="https://github.com/wildcardcharacter/Zufallswerk"
-           target="_blank"
-           rel="noopener">
-
-          <div class="project-top">
-            <span class="number">01</span>
-            <span class="version">v2.0.0</span>
-          </div>
-
-          <div class="project-icon">
-            🔐
-          </div>
-
-          <h3>
-            Zufallswerk
-          </h3>
-
-          <p>
-            Programm zum Erzeugen sicherer Passwörter und Passphrasen,
-            geschrieben in Haskell mit GTK.
-          </p>
-
-          <div class="project-tags">
-            <span>Haskell</span>
-            <span>GTK</span>
-            <span>Linux</span>
-          </div>
-
-          <p class="project-updated" data-repository="Zufallswerk" hidden></p>
-
-          <span class="project-link">
-            Projekt ansehen →
-          </span>
-
-        </a>
-
-
-        <!-- AudioHarvester -->
-        <a class="project"
-           href="https://github.com/wildcardcharacter/AudioHarvester"
-           target="_blank"
-           rel="noopener">
-
-          <div class="project-top">
-            <span class="number">02</span>
-            <span class="version">Python</span>
-          </div>
-
-          <div class="project-icon">
-            🎵
-          </div>
-
-          <h3>
-            AudioHarvester
-          </h3>
-
-          <p>
-            Desktop-Programm zum Herunterladen von Audio aus YouTube mit
-            yt-dlp und PyQt6.
-          </p>
-
-          <div class="project-tags">
-            <span>Python</span>
-            <span>PyQt6</span>
-            <span>yt-dlp</span>
-          </div>
-
-          <p class="project-updated" data-repository="AudioHarvester" hidden></p>
-
-          <span class="project-link">
-            Projekt ansehen →
-          </span>
-
-        </a>
-
-
-        <!-- Debian XFCE Update Indicator -->
-        <a class="project"
-           href="https://github.com/wildcardcharacter/Debian-XFCE-Update-Indicator"
-           target="_blank"
-           rel="noopener">
-
-          <div class="project-top">
-            <span class="number">03</span>
-            <span class="version">Bash</span>
-          </div>
-
-          <div class="project-icon">
-            ⚙️
-          </div>
-
-          <h3>
-            Debian XFCE Update Indicator
-          </h3>
-
-          <p>
-            Kleines Programm für das XFCE-Panel zur Anzeige verfügbarer
-            Systemupdates.
-          </p>
-
-          <div class="project-tags">
-            <span>Bash</span>
-            <span>XFCE</span>
-            <span>Linux</span>
-          </div>
-
-          <p class="project-updated" data-repository="Debian-XFCE-Update-Indicator" hidden></p>
-
-          <span class="project-link">
-            Projekt ansehen →
-          </span>
-
-        </a>
-
-
-        <!-- XFCE System Monitor Widget -->
-        <a class="project"
-           href="https://github.com/wildcardcharacter/XFCE-System-Monitor-Widget"
-           target="_blank"
-           rel="noopener">
-
-          <div class="project-top">
-            <span class="number">04</span>
-            <span class="version">Bash</span>
-          </div>
-
-          <div class="project-icon">
-            📊
-          </div>
-
-          <h3>
-            XFCE-System-Monitor-Widget
-          </h3>
-
-          <p>
-            Leichtgewichtiges Programm im XFCE-Panel für
-            Systeminformationen und Monitoring.
-          </p>
-
-          <div class="project-tags">
-            <span>Bash</span>
-            <span>XFCE</span>
-            <span>Linux</span>
-          </div>
-
-          <p class="project-updated" data-repository="XFCE-System-Monitor-Widget" hidden></p>
-
-          <span class="project-link">
-            Projekt ansehen →
-          </span>
-
-        </a>
-
-
-        <!-- AdGuard VPN XFCE Genmon Widget -->
-        <a class="project"
-           href="https://github.com/wildcardcharacter/AdGuard-VPN-XFCE-Genmon-Widget"
-           target="_blank"
-           rel="noopener">
-
-          <div class="project-top">
-            <span class="number">05</span>
-            <span class="version">Bash</span>
-          </div>
-
-          <div class="project-icon">
-            🛡️
-          </div>
-
-          <h3>
-            AdGuard-VPN-XFCE-Genmon-Widget
-          </h3>
-
-          <p>
-            Programm im XFCE-Panel zur Steuerung und Anzeige
-            des AdGuard VPN Status.
-          </p>
-
-          <div class="project-tags">
-            <span>Bash</span>
-            <span>XFCE</span>
-            <span>Linux</span>
-          </div>
-
-          <p class="project-updated" data-repository="AdGuard-VPN-XFCE-Genmon-Widget" hidden></p>
-
-          <span class="project-link">
-            Projekt ansehen →
-          </span>
-
-        </a>
-
-
-      </div>
-
+    <section class="ticker" aria-label="Technologien"><div class="ticker-track"><span>HASKELL</span><b>✳</b><span>RUST</span><b>✳</b><span>PYTHON</span><b>✳</b><span>BASH</span><b>✳</b><span>DEBIAN</span><b>✳</b><span>OPEN SOURCE</span><b>✳</b><span>HASKELL</span><b>✳</b><span>RUST</span><b>✳</b><span>PYTHON</span><b>✳</b><span>BASH</span><b>✳</b><span>DEBIAN</span><b>✳</b><span>OPEN SOURCE</span><b>✳</b></div></section>
+
+    <section class="section shell about-section" id="ueber">
+      <div class="section-kicker"><span>01 / ÜBER MICH</span><span class="kicker-line"></span><span>THE PERSON BEHIND THE PIXELS</span></div>
+      <div class="about-grid"><h2>Neugierig bleiben.<br><em>Dinge besser machen.</em></h2><div class="about-copy"><p>Ich bin Markus — technikbegeistert, Linux-Nutzer und jemand, der gern selbst herausfindet, wie Dinge funktionieren.</p><p>Viele meiner Projekte beginnen mit einer konkreten Alltagssituation: ein fehlendes kleines Werkzeug, ein umständlicher Ablauf oder einfach eine Idee, die ich ausprobieren möchte. Daraus werden Programme, die übersichtlich bleiben und genau das tun, was sie sollen.</p><div class="tag-row"><span>Debian 13</span><span>XFCE</span><span>Haskell</span><span>Rust</span><span>Python</span><span>Bash</span></div></div></div>
     </section>
 
-
-    <!-- =========================
-         PLANNED PROJECTS
-         ========================= -->
-    <section class="section planned-section" id="geplant">
-
-      <div class="section-title">
-        <span>03</span>
-        <h2>Geplante Projekte</h2>
+    <section class="section projects-section" id="projekte"><div class="shell">
+      <div class="section-kicker"><span>02 / PROJEKTE</span><span class="kicker-line"></span><span>TOOLS FROM THE WORKBENCH</span></div>
+      <div class="section-heading"><div><h2>In Arbeit <em>&amp; im Einsatz.</em></h2><p>Eine Auswahl kleiner Werkzeuge für Linux und den Alltag.</p></div><a class="text-link" href="https://github.com/wildcardcharacter" target="_blank" rel="noreferrer">Alle Repositories <span>↗</span></a></div>
+      <article class="featured-project"><div class="featured-top"><span class="project-index">FEATURED PROJECT / 001</span><span class="status-pill"><i></i> IN ENTWICKLUNG</span></div><div class="featured-main"><div class="featured-icon">⌕</div><div class="featured-copy"><p class="project-label">RUST · CLI · FILE TOOLS</p><h3>FileDNA</h3><p>Dateien verstehen. Ihre Identität sichtbar machen. Ein Werkzeug zur Analyse von Metadaten, Hashes und Dateiunterschieden — mit dem Ziel, Dateien leichter untersuchen und vergleichen zu können.</p><div class="mini-tags"><span>SHA-256</span><span>Metadaten</span><span>Dateivergleich</span></div></div><div class="featured-side"><span class="big-number">01</span><a href="https://github.com/wildcardcharacter" target="_blank" rel="noreferrer" aria-label="GitHub-Profil mit FileDNA-Projekt öffnen" class="round-link">↗</a></div></div><div class="featured-bottom"><span>STATUS: IDEE WIRD CODE</span><span>MADE ON LINUX <b>✳</b></span></div></article>
+      <div class="project-grid">
+        <article class="project-card card-yellow"><div class="card-top"><span>002 / HASKELL</span><span class="card-symbol">⌁</span></div><h3>Zufallswerk</h3><p>Ein Passwort- und Passphrasen-Generator für Linux mit Fokus auf sichere Zufallswerte und eine unkomplizierte Bedienung.</p><div class="card-footer"><span>SECURITY · GTK/YAD</span><a href="https://github.com/wildcardcharacter/Zufallswerk" target="_blank" rel="noreferrer" aria-label="Zufallswerk auf GitHub öffnen">↗</a></div></article>
+        <article class="project-card card-blue"><div class="card-top"><span>003 / PYTHON</span><span class="card-symbol">♫</span></div><h3>AudioHarvester</h3><p>Ein Desktop-Programm für Audio-Downloads mit yt-dlp und ffmpeg — inklusive Formatwahl, Verlauf und Cover-Artwork.</p><div class="card-footer"><span>PYQT6 · YT-DLP</span><a href="https://github.com/wildcardcharacter/AudioHarvester" target="_blank" rel="noreferrer" aria-label="AudioHarvester auf GitHub öffnen">↗</a></div></article>
+        <article class="project-card card-pink"><div class="card-top"><span>004 / BASH</span><span class="card-symbol">↻</span></div><h3>Debian Update Indicator</h3><p>Zeigt verfügbare APT-Updates direkt im XFCE-Panel an — klein, praktisch und sofort im Blick.</p><div class="card-footer"><span>DEBIAN · XFCE</span><a href="https://github.com/wildcardcharacter/Debian-XFCE-Update-Indicator" target="_blank" rel="noreferrer" aria-label="Debian Update Indicator auf GitHub öffnen">↗</a></div></article>
+        <article class="project-card card-green"><div class="card-top"><span>005 / BASH</span><span class="card-symbol">▥</span></div><h3>XFCE System Monitor</h3><p>Ein leichtgewichtiges Panel-Widget für wichtige Systeminformationen und Monitoring auf dem Linux-Desktop.</p><div class="card-footer"><span>SYSTEM · MONITORING</span><a href="https://github.com/wildcardcharacter/XFCE-System-Monitor-Widget" target="_blank" rel="noreferrer" aria-label="XFCE System Monitor auf GitHub öffnen">↗</a></div></article>
+        <article class="project-card card-lilac"><div class="card-top"><span>006 / BASH</span><span class="card-symbol">⌁</span></div><h3>AdGuard VPN Widget</h3><p>Steuerung und Statusanzeige für AdGuard VPN direkt im XFCE-Panel.</p><div class="card-footer"><span>VPN · XFCE GENMON</span><a href="https://github.com/wildcardcharacter/AdGuard-VPN-XFCE-Genmon-Widget" target="_blank" rel="noreferrer" aria-label="AdGuard VPN Widget auf GitHub öffnen">↗</a></div></article>
       </div>
+    </div></section>
 
-      <div class="about planned-intro">
-        <p>
-          Ideen und Projekte, die als Nächstes entstehen sollen.
-          Noch in Planung – aber bereits auf Papier.
-        </p>
-      </div>
+    <section class="section roadmap-section shell" id="geplant"><div class="section-kicker"><span>03 / ROADMAP</span><span class="kicker-line"></span><span>IDEAS ON THE BENCH</span></div><div class="roadmap-layout"><div><h2>Was als Nächstes<br><em>Form annimmt.</em></h2><p class="roadmap-intro">Nicht jede Idee ist schon Code. Manche dürfen erst ein bisschen auf dem Papier wachsen.</p></div><div class="roadmap-list"><article><span class="roadmap-number">01</span><div><div class="roadmap-title"><h3>FileDNA</h3><span>RUST / CLI</span></div><p>Dateien anhand ihrer digitalen DNA untersuchen, identifizieren und vergleichen.</p></div><span class="roadmap-status">IN ARBEIT</span></article><article><span class="roadmap-number">02</span><div><div class="roadmap-title"><h3>RuleForge</h3><span>HASKELL / DSL</span></div><p>Eine kleine Regelsprache für Dateien, Systeminformationen und Automatisierung.</p></div><span class="roadmap-status">KONZEPT</span></article><div class="roadmap-note">IDEENSTAND: <span>IMMER IN BEWEGUNG</span> <b>✳</b></div></div></div></section>
 
-      <div class="projects">
+    <section class="contact-section" id="kontakt"><div class="shell contact-inner"><div class="contact-orbit" aria-hidden="true">✳</div><div class="section-kicker"><span>04 / KONTAKT</span><span class="kicker-line"></span><span>SAY HELLO</span></div><h2>Eine Idee im Kopf?<br><em>Lass uns reden.</em></h2><p>Fragen, Feedback, Vorschläge oder einfach Interesse an einem Projekt? Ich freue mich über eine Nachricht.</p><div class="contact-actions"><a class="button button-primary" href="mailto:wildcardcharacter@icloud.com">E-Mail schreiben <span>↗</span></a><a class="button button-outline" href="https://github.com/wildcardcharacter" target="_blank" rel="noreferrer">GitHub besuchen <span>↗</span></a></div></div></section>
+  </main>
 
-        <!-- FileDNA -->
-        <div class="project planned-project">
-
-          <div class="project-top">
-            <span class="number">01</span>
-            <span class="version">Geplant</span>
-          </div>
-
-          <div class="project-icon">
-            🧬
-          </div>
-
-          <h3>
-            FileDNA
-          </h3>
-
-          <p>
-            Rust-basiertes Tool zur Untersuchung, Identifizierung
-            und zum Vergleich von Dateien anhand ihrer digitalen
-            „DNA“.
-          </p>
-
-          <div class="project-tags">
-            <span>Rust</span>
-            <span>CLI</span>
-            <span>Linux</span>
-          </div>
-
-          <span class="project-link">
-            In Planung
-          </span>
-
-        </div>
-
-
-        <!-- RuleForge -->
-        <div class="project planned-project">
-
-          <div class="project-top">
-            <span class="number">02</span>
-            <span class="version">Geplant</span>
-          </div>
-
-          <div class="project-icon">
-            ⚒️
-          </div>
-
-          <h3>
-            RuleForge
-          </h3>
-
-          <p>
-            Kleine, in Haskell entwickelte Regelsprache für
-            Dateien, Systeminformationen und Automatisierung.
-          </p>
-
-          <div class="project-tags">
-            <span>Haskell</span>
-            <span>DSL</span>
-            <span>Linux</span>
-          </div>
-
-          <span class="project-link">
-            In Planung
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-         ========================= -->
-    <section class="section" id="kontakt">
-
-      <div class="section-title">
-        <span>04</span>
-        <h2>Kontakt</h2>
-      </div>
-
-      <div class="contact">
-
-        <p>
-          Fragen, Ideen oder Interesse an einem Projekt?
-          Schreib mir gerne.
-        </p>
-
-        <div class="actions">
-
-          <a class="button"
-             href="mailto:wildcardcharacter@icloud.com">
-            Email schreiben →
-          </a>
-
-          <a class="button"
-             href="https://github.com/wildcardcharacter"
-             target="_blank"
-             rel="noopener">
-            GitHub →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         FOOTER
-         ========================= -->
-    <footer>
-
-      <p>
-        © 2026 Markus
-      </p>
-
-    </footer>
-<a href="#top" class="back-to-top" aria-label="Zum Seitenanfang">
-  ↑ TOP
-</a>
-<script>
-  document.querySelectorAll(".project-updated[data-repository]").forEach(async (label) => {
-    const repository = label.dataset.repository;
-
-    try {
-      const response = await fetch(`https://api.github.com/repos/wildcardcharacter/${repository}`);
-      if (!response.ok) return;
-
-      const data = await response.json();
-      const updatedAt = new Date(data.updated_at);
-      if (Number.isNaN(updatedAt.getTime())) return;
-
-      label.textContent = `Zuletzt aktualisiert: ${new Intl.DateTimeFormat("de-DE").format(updatedAt)}`;
-      label.hidden = false;
-    } catch {
-      // Die Projektkacheln bleiben auch ohne Verbindung zur GitHub-API nutzbar.
-    }
-  });
-</script>
+  <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="#start" aria-label="Zur Startseite"><img src="favicon.png" alt=""></a><p>© <span id="year">2026</span> Markus <span class="footer-sep">/</span> Gebaut mit Neugier und einer Tasse Kaffee.</p></div></footer>
+  <a href="#start" class="back-top" id="back-top" aria-label="Zurück nach oben"><span aria-hidden="true">↑</span><span>Nach oben</span></a>
+  <script src="script.js"></script>
 </body>
 </html>
