@@ -138,3 +138,18 @@ html[data-theme="dark"] .contact-section { color: #f5f1e7; }
 html[data-theme="dark"] .contact-section p { color: #e0e3d8; }
 html[data-theme="dark"] .floating-theme-toggle { background: #d5f05b; color: #20231e; border-color: #d5f05b; }
 html[data-theme="dark"] .back-top { background: #d5f05b; color: #20231e; border-color: #d5f05b; }
+
+/* Eigenständiger Hinweis auf das neue Stellenfinder-Projekt */
+.mention-section{background:var(--paper);border-bottom:1px solid var(--line)}
+.mention-card{margin-top:38px;padding:34px 38px;background:var(--lime);border:1px solid var(--ink);box-shadow:7px 7px 0 var(--ink);display:flex;align-items:center;justify-content:space-between;gap:30px}
+.mention-label{margin:0 0 10px;font:10px var(--mono);letter-spacing:.1em;color:var(--ink)}
+.mention-label span{color:var(--orange);font-size:15px;margin-right:6px}
+.mention-card h2{font-size:clamp(36px,4.3vw,54px);line-height:1;letter-spacing:-.07em;margin:0 0 12px}
+.mention-card h2 em{font-style:normal;color:var(--orange)}
+.mention-card>div>p:last-child{max-width:560px;margin:0;color:#42463d;font-size:14px}
+.mention-card .button{flex:0 0 auto}
+html[data-theme="dark"] .mention-section{background:var(--paper)}
+html[data-theme="dark"] .mention-card{background:#d5f05b;color:#20231e;border-color:#10120f;box-shadow:7px 7px 0 #10120f}
+html[data-theme="dark"] .mention-label,html[data-theme="dark"] .mention-card h2,html[data-theme="dark"] .mention-card>div>p:last-child{color:#20231e}
+html[data-theme="dark"] .mention-card h2 em{color:#b64022}
+@media(max-width:600px){.mention-card{margin-top:28px;padding:24px 20px;align-items:flex-start;flex-direction:column;gap:22px;box-shadow:5px 5px 0 var(--ink)}.mention-card h2{font-size:40px}.mention-card>div>p:last-child{font-size:13px}.mention-card .button{width:100%;justify-content:space-between}}
