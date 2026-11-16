@@ -159,11 +159,15 @@ html[data-theme="dark"] .mention-card h2 em{color:#b64022}
 
 /* Ruhige, responsive Technikleiste ohne Lauftext. */
 .ticker-track {
-  width: 100%;
+  width: auto;
   min-width: 0;
-  justify-content: space-between;
-  gap: clamp(12px, 2.4vw, 28px);
-  white-space: nowrap;
+  height: auto;
+  min-height: 52px;
+  padding: 10px 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px clamp(12px, 2.4vw, 28px);
+  white-space: normal;
   animation: none;
   transform: none;
   will-change: auto;
