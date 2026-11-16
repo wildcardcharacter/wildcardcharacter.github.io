@@ -155,59 +155,34 @@ html[data-theme="dark"] .mention-card h2 em{color:#b64022}
 @media(max-width:600px){.mention-card{margin-top:28px;padding:24px 20px;align-items:flex-start;flex-direction:column;gap:22px;box-shadow:5px 5px 0 var(--ink)}.mention-card h2{font-size:40px}.mention-card>div>p:last-child{font-size:13px}.mention-card .button{width:100%;justify-content:space-between}}
 
 
-/* Bewegter Technik-Ticker: auf schmalen Displays bleibt die Zeile lesbar. */
+
+
+/* Ruhige, responsive Technikleiste ohne Lauftext. */
 .ticker-track {
-  justify-content: flex-start;
-  width: max-content;
-  animation: ticker-marquee 28s linear infinite;
-  will-change: transform;
+  width: 100%;
+  min-width: 0;
+  justify-content: space-between;
+  gap: clamp(12px, 2.4vw, 28px);
+  white-space: nowrap;
+  animation: none;
+  transform: none;
+  will-change: auto;
 }
-.ticker:hover .ticker-track,
-.ticker:focus-within .ticker-track {
-  animation-play-state: paused;
-}
-@keyframes ticker-marquee {
-  to { transform: translateX(-50%); }
-}
+.ticker-track > :nth-child(n+13) { display: none; }
 @media (max-width: 600px) {
   .ticker-track {
-    height: 43px;
-    gap: 18px;
+    width: auto;
+    min-width: 0;
+    height: auto;
+    min-height: 43px;
+    padding: 10px 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px clamp(10px, 3vw, 16px);
+    white-space: normal;
     font-size: 9px;
   }
 }
-@media (prefers-reduced-motion: reduce) {
-  .ticker { overflow: visible; }
-  .ticker-track {
-    width: auto;
-    min-width: 0;
-    height: auto;
-    padding: 12px 18px;
-    justify-content: center;
-    flex-wrap: wrap;
-    white-space: normal;
-    animation: none;
-    will-change: auto;
-  }
-  .ticker-track > :nth-child(n+13) { display: none; }
-}
-
-
-/* Auf Smartphones alle Technologien ohne abgeschnittene Laufzeile zeigen. */
-@media (max-width: 600px) {
-  .ticker { overflow: visible; }
-  .ticker-track {
-    width: auto;
-    min-width: 0;
-    height: auto;
-    padding: 11px 18px;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 6px 12px;
-    white-space: normal;
-    animation: none;
-    transform: none;
-    will-change: auto;
-  }
-  .ticker-track > :nth-child(n+13) { display: none; }
+@media (max-width: 360px) {
+  .ticker-track { column-gap: 8px; }
 }
