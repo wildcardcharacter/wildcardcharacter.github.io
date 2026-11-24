@@ -221,3 +221,7 @@ html[data-theme="dark"] .contact-card-bottom a{color:#f0f0e5}
 a.featured-project{display:block;color:var(--paper);transition:transform .2s,box-shadow .2s}
 a.featured-project:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.14)}
 a.featured-project:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+a.project-card{color:var(--ink);cursor:pointer}
+a.project-card:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.project-card .card-arrow{width:29px;height:29px;display:grid;place-items:center;border:1px solid #20231e;color:#20231e;font-size:16px;transition:background .2s,color .2s}
+.project-card:hover .card-arrow{background:var(--lime);color:#20231e}
