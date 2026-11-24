@@ -216,3 +216,8 @@ html[data-theme="dark"] .contact-card-bottom a{color:#f0f0e5}
 @media(max-width:850px){.contact-layout{grid-template-columns:minmax(0,1fr) minmax(260px,.85fr);gap:30px}.contact-card{padding:22px 20px 18px}}
 @media(max-width:600px){.contact-inner{padding-top:54px;padding-bottom:20px}.contact-layout{grid-template-columns:1fr;gap:30px;padding:34px 0 34px}.contact-copy{max-width:none}.contact-overline{font-size:8px;margin-bottom:14px}.contact-inner h2{font-size:clamp(43px,12vw,56px);margin-bottom:17px}.contact-copy>p:last-child{font-size:13px;line-height:1.7}.contact-card{padding:20px 18px 17px;box-shadow:5px 5px 0 var(--ink);transform:none}.contact-card-top{padding-bottom:14px}.contact-email{font-size:clamp(20px,6.4vw,28px);padding:22px 0 24px}.contact-card-bottom{align-items:flex-start;flex-direction:column;gap:12px}.contact-footnote{flex-direction:column;gap:8px;font-size:7px;line-height:1.5}.contact-footnote span:last-child{align-self:flex-end}}
 @media(max-width:360px){.contact-card{padding-inline:15px}.contact-card-bottom{font-size:7px}.contact-footnote{letter-spacing:.04em}}
+
+/* Die gesamte Featured-Projektfläche ist ein einzelner, sichtbarer Link. */
+a.featured-project{display:block;color:var(--paper);transition:transform .2s,box-shadow .2s}
+a.featured-project:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.14)}
+a.featured-project:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
